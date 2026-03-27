@@ -1,0 +1,12 @@
+# Common ignored files
+node_modules/
+dist/
+build/
+.env
+*.db
+__pycache__/
+*.pyc
+.vercel/
+.idea/
+.vscode/
+.DS_Store

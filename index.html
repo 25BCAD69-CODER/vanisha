@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanisha S | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ░░ Animated Background ░░ -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ░░ Navbar ░░ -->
+  <nav id="navbar">
+    <a class="nav-brand" href="#home">VS</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"    class="nav-link">Home</a></li>
+      <li><a href="#about"   class="nav-link">About</a></li>
+      <li><a href="#skills"  class="nav-link">Skills</a></li>
+      <li><a href="#projects"class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ░░ Hero ░░ -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+
+      <!-- Profile Photo -->
+      <div class="profile-wrap">
+        <div class="profile-ring">
+          <img
+            src="assets/profile.jpg"
+            alt="Vanisha S"
+            class="profile-img"
+            onerror="this.style.display='none'; document.getElementById('vs-avatar').style.display='flex';"
+          />
+          <div class="avatar" id="vs-avatar" style="display:none">VS</div>
+        </div>
+        <span class="status-badge">
+          <span class="status-dot"></span> Available
+        </span>
+      </div>
+
+      <!-- Text -->
+      <div class="hero-text">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="hero-name">Vanisha <span class="grad-text">S</span></h1>
+        <p class="hero-role">
+          <span id="typed"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-sub">
+          <i class="fas fa-university"></i>&nbsp; BCA Student · Kristu Jayanti University
+        </p>
+        <div class="hero-btns">
+          <a href="#contact"  class="btn btn-primary">Get In Touch</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+        <div class="social-row">
+          <a href="mailto:vanisha419@gmail.com" class="social-icon" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" class="social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ░░ About ░░ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="grad-text">Me</span></h2>
+
+      <div class="about-cards">
+        <div class="glass-card about-card reveal">
+          <div class="about-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Education</h3>
+          <p>Bachelor of Computer Applications</p>
+          <span class="about-sub">Kristu Jayanti University</span>
+        </div>
+        <div class="glass-card about-card reveal">
+          <div class="about-icon sport"><i class="fas fa-person-running"></i></div>
+          <h3>Athletics</h3>
+          <p>Actively involved in sports</p>
+          <span class="about-sub">Discipline &amp; Determination</span>
+        </div>
+        <div class="glass-card about-card reveal">
+          <div class="about-icon code"><i class="fas fa-code"></i></div>
+          <h3>Passion</h3>
+          <p>Programming &amp; Technology</p>
+          <span class="about-sub">Always learning, always growing</span>
+        </div>
+      </div>
+
+      <div class="glass-card about-bio reveal">
+        <p>
+          I'm a <strong>BCA student</strong> at <strong>Kristu Jayanti University</strong>, combining
+          academic curiosity with athletic discipline. As an active <strong>athletics</strong> participant,
+          I bring the same focus and persistence to my passion for <strong>programming</strong> and
+          building a future in technology.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ Skills ░░ -->
+  <section id="skills" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">My <span class="grad-text">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="glass-card skill-card reveal" data-delay="0">
+          <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+          <span class="skill-name">HTML</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="glass-card skill-card reveal" data-delay="80">
+          <div class="skill-icon python"><i class="fab fa-python"></i></div>
+          <span class="skill-name">Python</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+
+        <div class="glass-card skill-card reveal" data-delay="160">
+          <div class="skill-icon c"><i class="fas fa-code"></i></div>
+          <span class="skill-name">C</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+
+        <div class="glass-card skill-card reveal" data-delay="240">
+          <div class="skill-icon cpp"><i class="fas fa-terminal"></i></div>
+          <span class="skill-name">C++</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+        </div>
+
+        <div class="glass-card skill-card reveal" data-delay="320">
+          <div class="skill-icon sql"><i class="fas fa-database"></i></div>
+          <span class="skill-name">SQL</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ Projects ░░ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">My <span class="grad-text">Projects</span></h2>
+      <div class="glass-card projects-soon reveal">
+        <div class="rocket-wrap"><i class="fas fa-rocket"></i></div>
+        <h3>Coming Soon</h3>
+        <p>Exciting projects are on the way! Check back soon to see what Vanisha is building.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ Contact ░░ -->
+  <section id="contact" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="grad-text">Touch</span></h2>
+      <div class="contact-grid">
+
+        <!-- Info card -->
+        <div class="glass-card contact-info reveal">
+          <h3>Let's Connect</h3>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="c-label">Email</p>
+              <a href="mailto:vanisha419@gmail.com">vanisha419@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <p class="c-label">Location</p>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fas fa-university"></i></div>
+            <div>
+              <p class="c-label">University</p>
+              <p>Kristu Jayanti University</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form card -->
+        <div class="glass-card contact-form-wrap reveal">
+          <h3>Send a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" placeholder="Your name" autocomplete="off" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" rows="4" placeholder="Write your message here…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              <span id="btnText">Send Message</span>
+              <i class="fas fa-paper-plane" id="btnIcon"></i>
+              <span class="btn-spinner hidden" id="btnSpinner"></span>
+            </button>
+            <div id="formStatus" class="form-status hidden"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ Footer ░░ -->
+  <footer>
+    <p>© 2026 <strong>Vanisha S</strong> · Portfolio</p>
+    <p class="visitor-line">
+      <i class="fas fa-eye"></i>&nbsp;
+      <span id="visitorCount">—</span> visitors
+    </p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
